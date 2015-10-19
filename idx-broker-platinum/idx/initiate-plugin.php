@@ -49,7 +49,7 @@ class Initiate_Plugin
     {
         if (!wp_get_schedule('idx_omnibar_get_locations')) {
             //refresh omnibar fields once a day
-            wp_schedule_event(time(), 'daily', 'idx_omnibar_get_locations');
+            wp_schedule_event(time(), 'twicedaily', 'idx_omnibar_get_locations');
         }
     }
 
